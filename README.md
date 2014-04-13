@@ -106,9 +106,15 @@ Finally if do this for Accumulator less than zero or equal to zero:
 
           ```
           AlessZero <= '1' when Accumulator(3) = '1' else '0'; 	--Uses MSB as a sign bit
-  	      AeqZero <= '1' when Accumulator = "0000" else '0';
-  	      ```
-  	      
+       	  AeqZero <= '1' when Accumulator = "0000" else '0';
+  	  ```
+
+Once again the testbench was already made for us and here are the first 50ns of the simulation. Since they match up with
+the results from Captain Silva's answer key than it went correctly. However, you can also follow what each value is
+supposed to be if you went through the whole simulation.
+
+![alt text](https://raw.githubusercontent.com/JarrodWooden/PRISM_Wooden/master/DataPathPic.PNG "Simulation for the ALU")
+	      
 #End of PRISM_Wooden
 
             
